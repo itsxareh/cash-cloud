@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/light_green_border</item>
+        <item name="android:textColor">@color/moneygreen</item>
+        <item name="android:fontFamily">@font/cerebri_sans</item>
+    </style>
+    <style name="TextInputLayoutHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="CustomTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTabText</item>
+    </style>
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="fontFamily">@font/cerebri_sans</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

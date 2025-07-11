@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MySavingsAccount">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cerebri_sans"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_below="@id/settingsTitle"
+        android:id="@+id/cashInText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="My Savings"
+        android:textSize="28sp"
+        android:fontFamily="@font/cerebri_sans_semibold"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/showBalanceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_remove_red_eye_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/cashInText"
+        android:layout_marginRight="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <TextView
+        android:id="@+id/accountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="•••• •••• ••••"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-8dp"
+        android:textSize="14sp"
+        android:layout_below="@id/cashInText"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cerebri_sans" />
+
+    <RelativeLayout
+        android:layout_below="@id/accountNumber"
+        android:id="@+id/savingslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="24dp"
+        android:paddingHorizontal="16dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/gray_border">
+
+        <TextView
+            android:id="@+id/moneySign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₱"
+            android:textSize="28sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/balanceAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/moneySign"
+            android:textSize="28sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/savingsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/moneySign"
+            android:fontFamily="@font/cerebri_sans"
+            android:layout_marginTop="12dp"
+            android:text="At 8.0% interest per annum"
+            android:textSize="14sp"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/depositAccount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Deposit to my account"
+            android:fontFamily="@font/cerebri_sans"
+            android:paddingVertical="14dp"
+            android:textColor="@color/pink"
+            android:backgroundTint="@color/darkpink" />
+    </LinearLayout>
+</RelativeLayout>

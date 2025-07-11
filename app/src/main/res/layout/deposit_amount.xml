@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DepositAmount">
+
+    <TextView
+        android:id="@+id/allsetText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cerebri_sans_semibold"
+        android:padding="16dp"
+        android:text="Deposit to my account"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <LinearLayout
+        android:id="@+id/mobileNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allsetText"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16sp"
+        android:orientation="vertical"
+        android:background="@drawable/gray_border"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/registeredText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deposit amount"
+            android:textSize="12sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/darkpink" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱"
+                android:textSize="16dp"
+                android:layout_marginRight="2dp"
+                android:fontFamily="@font/cerebri_sans" />
+
+            <EditText
+                android:id="@+id/depositAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="0.00"
+                android:fontFamily="@font/cerebri_sans"
+                android:inputType="numberDecimal"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/currentBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNumberLayout"
+        android:text="Current balance"
+        android:fontFamily="@font/cerebri_sans"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="36dp"
+        android:textColor="@color/gray" />
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/cerebri_sans"
+        android:text="Continue"
+        android:backgroundTint="@color/darkpink"
+        android:textSize="12sp" />
+
+    <!-- Progress bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

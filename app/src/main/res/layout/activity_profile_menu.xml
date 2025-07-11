@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileHeader">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:background="@drawable/moneygreen_circle_border"
+            android:src="@drawable/baseline_white_person_24" />
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profileIcon"
+            android:textSize="16sp"
+            android:text="Profile name"
+            android:fontFamily="@font/cerebri_sans_semibold" />
+        <TextView
+            android:id="@+id/profilePhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileName"
+            android:layout_centerHorizontal="true"
+            android:text="Phone number"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="12sp"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/transactions_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileHeader"
+        android:background="@drawable/gray_border"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/profileMenuTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE MENU"
+            android:layout_marginBottom="12dp"
+            android:textSize="8sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/quickGuideMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileMenuTitle"
+            android:drawableLeft="@drawable/baseline_guide_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Quick guide"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/settingsMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quickGuideMenu"
+            android:drawableLeft="@drawable/baseline_settings_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:text="Settings"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settingsMenu"
+            android:layout_marginVertical="12dp"
+            android:backgroundTint="@color/lightgray"
+            android:text="Log out"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cerebri_sans" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tagline_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Seamless Banking at Your Fingertips"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/cerebri_sans" />
+
+    <TextView
+        android:id="@+id/logo_image"
+        android:layout_width="205dp"
+        android:layout_marginTop="-6dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tagline_text"
+        android:layout_centerHorizontal="true"
+        android:text="CashCloud"
+        android:textColor="@color/darkpink"
+        android:fontFamily="@font/cerebri_sans_bold"
+        android:textSize="37sp"/>
+
+    <Button
+        android:id="@+id/start_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_button"
+        android:backgroundTint="@color/darkpink"
+        android:text="Start an account"
+        android:paddingVertical="15dp"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:fontFamily="@font/cerebri_sans_semibold" />
+
+    <!-- Log in Button -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer_text"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/grey"
+        android:text="Log in"
+        android:paddingVertical="15dp"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:fontFamily="@font/cerebri_sans_semibold" />
+
+    <!-- Footer Text -->
+    <TextView
+        android:id="@+id/footer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Regulated by the Bangko Sentral ng Pilipinas. Deposits are insured by PDIC up to P500,000 per depositor."
+        android:textSize="10sp"
+        android:paddingHorizontal="4dp"
+        android:textColor="#808080"
+        android:gravity="center"
+        android:fontFamily="@font/cerebri_sans" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_button" />
+</RelativeLayout>

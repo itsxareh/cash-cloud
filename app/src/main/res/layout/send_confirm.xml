@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SendConfirm">
+
+    <TextView
+        android:id="@+id/transferToText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Transfer to"
+        android:textSize="24sp"
+        android:fontFamily="@font/cerebri_sans_semibold"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:layout_below="@id/transferToText"
+        android:id="@+id/accountDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="20dp"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/accountNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Name"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/accountName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juan Dela Cruz"
+            android:layout_below="@id/accountNameText"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/accountNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountName"
+            android:text="Account Number"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/accountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxxx"
+            android:layout_below="@id/accountNumberText"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/accountDetails"
+        android:id="@+id/inputAmountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="12dp"
+        android:background="@drawable/gray_border" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You're about to transfer"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/amountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleText"
+            android:text="Amount"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/amountPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleText"
+            android:layout_toLeftOf="@id/amount"
+            android:text="₱"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleText"
+            android:layout_alignParentEnd="true"
+            android:text="0.00"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/feeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amountText"
+            android:text="Fee"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/feePeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amountPeso"
+            android:layout_toLeftOf="@id/fee"
+            android:text="₱"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount"
+            android:layout_alignParentEnd="true"
+            android:text="0.00"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="2dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/totalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:layout_below="@id/feeText"
+            android:fontFamily="@font/cerebri_sans"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/totalPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fee"
+            android:layout_toLeftOf="@id/total"
+            android:text="₱"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fee"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="2dp"
+            android:text="0.00"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:fontFamily="@font/cerebri_sans"
+        android:text="Confirm"
+        android:backgroundTint="@color/darkpink"
+        android:layout_marginBottom="24dp"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="44dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

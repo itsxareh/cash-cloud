@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardsFragment">
+
+    <RelativeLayout
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" >
+
+        <TextView
+            android:id="@+id/walletCardsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WALLET CARDS"
+            android:textAllCaps="true"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_below="@id/walletCardsText"
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/gradient_background"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/cardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="CashCloud"
+                        android:fontFamily="@font/cerebri_sans_semibold"
+                        android:textSize="18sp"/>
+                    <ImageView
+                        android:layout_above="@id/cardNumber"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="4dp"
+                        android:src="@mipmap/ic_chipcard_foreground" />
+                    <TextView
+                        android:id="@+id/cardNumber"
+                        android:layout_above="@id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234 1234 1234 1234"
+                        android:layout_marginTop="12dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/cerebri_sans" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cerebri_sans"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@id/cardNumber" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="username"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/cerebri_sans"
+                        android:layout_marginTop="16dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Online Card"
+            android:layout_below="@id/cardView"
+            android:fontFamily="@font/cerebri_sans"
+            android:layout_centerInParent="true"  />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_below="@id/cardLayout" >
+
+        <TextView
+            android:id="@+id/getCardText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GET A NEW CASHCLOUD CARD"
+            android:textAllCaps="true"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray" />
+
+    </RelativeLayout>
+</RelativeLayout>

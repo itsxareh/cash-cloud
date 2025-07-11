@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cerebri_sans"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/settings_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settingsTitle"
+        android:background="@drawable/gray_border"
+        android:layout_margin="16dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/displayText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISPLAY"
+            android:layout_marginVertical="12dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/showNameSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/displayText"
+            android:drawableLeft="@drawable/baseline_sensor_occupied_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Show my name"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/accountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showNameSetting"
+            android:text="ACCOUNT"
+            android:layout_marginVertical="10dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/recoverSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accountText"
+            android:drawableLeft="@drawable/baseline_published_with_changes_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Account Recovery"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/changePhoneNumberSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recoverSetting"
+            android:drawableLeft="@drawable/baseline_phonelink_setup_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Change phone number"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/closeAccountSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changePhoneNumberSetting"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:text="Close account"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+
+        //
+        <TextView
+            android:id="@+id/privacyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRIVACY &amp; SECURITY"
+            android:layout_marginVertical="12dp"
+            android:layout_below="@id/closeAccountSetting"
+            android:textSize="10sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/changePasswordSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/privacyText"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Change password"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/aboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/changePasswordSetting"
+            android:text="ABOUT APP"
+            android:layout_marginVertical="10dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/privacyPolicySetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutText"
+            android:drawableLeft="@drawable/baseline_privacy_policy_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Privacy policy"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/termsAndConditionsSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/privacyPolicySetting"
+            android:drawableLeft="@drawable/baseline_black_terms_and_conditions_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Terms &amp; Conditions"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/licenseSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/termsAndConditionsSetting"
+            android:drawableLeft="@drawable/baseline_license_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="12dp"
+            android:text="Licenses"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+</RelativeLayout>

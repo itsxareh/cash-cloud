@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoadFragment">
+    <GridLayout
+        android:id="@+id/partners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/gray_border"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/smartButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/smart"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SMART"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:fontFamily="@font/cerebri_sans_semibold"
+                android:layout_marginBottom="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="24dp"
+            android:padding="8dp"
+            android:background="@drawable/gray_border"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/tntButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/tnt"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TNT"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:fontFamily="@font/cerebri_sans_semibold"
+                android:layout_marginBottom="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:padding="8dp"
+            android:background="@drawable/gray_border"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/globeButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/globe"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GLOBE"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:fontFamily="@font/cerebri_sans_semibold"
+                android:layout_marginBottom="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/gray_border"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/tmButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/tm"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TM"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:fontFamily="@font/cerebri_sans_semibold"
+                android:layout_marginBottom="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/gray_border"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/ditoButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:src="@drawable/dito_load_online"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DITO"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:fontFamily="@font/cerebri_sans_semibold"
+                android:layout_marginBottom="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="24dp"
+            android:padding="8dp"
+            android:background="@drawable/gray_border"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/cherryButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cherryprepaid"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CHERRY PREPAID"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                android:fontFamily="@font/cerebri_sans_semibold"
+                android:layout_marginBottom="6dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </GridLayout>
+</RelativeLayout>

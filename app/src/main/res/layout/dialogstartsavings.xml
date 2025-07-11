@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="14dp"
+    android:background="@drawable/tlr_round_border"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Allow your money to expand."
+        android:padding="16dp"
+        android:textSize="28dp"
+        android:fontFamily="@font/cerebri_sans_semibold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/recoveryDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changePhoneText"
+        android:fontFamily="@font/cerebri_sans"
+        android:paddingHorizontal="16dp"
+        android:textSize="16sp"
+        android:text="Open a CashCloud savings account right now."
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recoveryDescriptionText"
+        android:layout_marginTop="16sp"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Earn up to 20% interest per annum."
+            android:textSize="16sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Transfer money from your Wallet instantly."
+            android:textSize="16sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/startSavingButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Start savings"
+            android:fontFamily="@font/cerebri_sans"
+            android:paddingVertical="14dp"
+            android:backgroundTint="@color/darkpink" />
+    </LinearLayout>
+</LinearLayout>

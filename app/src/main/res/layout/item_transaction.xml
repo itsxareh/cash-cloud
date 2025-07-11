@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="16dp">
+
+    <TextView
+        android:id="@+id/transactionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cerebri_sans"
+        android:paddingLeft="12dp"
+        android:textColor="@color/gray"
+        android:text="Type"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/transactionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/cerebri_sans"
+        android:textColor="@color/gray"
+        android:text="Date"
+        android:paddingRight="12dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/transactionDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transactionType"
+        android:text="Description"
+        android:paddingLeft="12dp"
+        android:fontFamily="@font/cerebri_sans"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+    <TextView
+        android:id="@+id/transactionPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cerebri_sans"
+        android:layout_toLeftOf="@id/transactionAmount"
+        android:layout_below="@id/transactionDate"
+        android:text="₱"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+    <TextView
+        android:id="@+id/transactionAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cerebri_sans"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/transactionDate"
+        android:paddingRight="12dp"
+        android:text="Amount"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/referenceText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/cerebri_sans"-->
+<!--        android:textColor="@color/gray"-->
+<!--        android:layout_below="@id/transactionDescription"-->
+<!--        android:text="Reference no."-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:textSize="12sp" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/referenceNo"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/transactionAmount"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:fontFamily="@font/cerebri_sans"-->
+<!--        android:textColor="@color/gray"-->
+<!--        android:text="xxxxxxxxx"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:textSize="12sp" />-->
+</RelativeLayout>

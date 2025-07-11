@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/white"
+    tools:context=".TransportFragment">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <GridLayout
+            android:id="@+id/partners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:columnCount="2"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/grabTopupButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/grabdriver"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grab Driver Top up"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/grabButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/grab"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grab"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/beepButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beep"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beep"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/angkasButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/angkas"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Angkas for Bikers"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/moveItRiderButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/moveit"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Move It Rider"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </GridLayout>
+    </RelativeLayout>
+</ScrollView>

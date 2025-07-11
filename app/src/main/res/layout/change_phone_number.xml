@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePhoneNumber">
+
+    <TextView
+        android:id="@+id/changePhoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change mobile number"
+        android:textSize="24sp"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/cerebri_sans_semibold"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/recoveryDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/changePhoneText"
+        android:layout_marginHorizontal="16dp"
+        android:text="Your number will be used to identify your Maya account. We'll use this to send OPTs, service updates, and all the best deals."
+        android:fontFamily="@font/cerebri_sans"
+        android:padding="4dp"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/mobileNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recoveryDescriptionText"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16sp"
+        android:orientation="vertical"
+        android:background="@drawable/gray_border"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/registeredText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registered Mobile Number"
+            android:textSize="12sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/currentPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+639xxxxxxxxx"
+            android:textSize="16sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:background="@null"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changePhoneButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileNumberLayout"
+        android:text="Change phone number"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="12sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/darkpink"
+        android:fontFamily="@font/cerebri_sans"
+        android:backgroundTint="@color/pink" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/changePhoneButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</RelativeLayout>

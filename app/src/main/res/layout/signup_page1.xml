@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Login form -->
+    <LinearLayout
+        android:id="@+id/loginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start an"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="40sp"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="account"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@color/darkpink"
+            android:textSize="40sp"/>
+
+        <EditText
+            android:id="@+id/createFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First name"
+            android:background="@drawable/gray_border"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="12sp"
+            android:padding="16dp"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:id="@+id/createLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gray_border"
+            android:hint="Last name"
+            android:padding="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/createEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/gray_border"
+            android:hint="Email address"
+            android:padding="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_info_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:fontFamily="@font/cerebri_sans"
+                android:text="We'll verify your email after you create an account." />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Continue button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:fontFamily="@font/cerebri_sans"
+        android:text="Continue"
+        android:layout_above="@id/loginButton"
+        android:backgroundTint="@color/gray"
+        android:textSize="12sp" />
+
+    <!-- Progress bar -->
+    <LinearLayout
+        android:layout_above="@id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <!-- Login button -->
+    <TextView
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/cerebri_sans"
+        android:layout_marginBottom="24dp"
+        android:textSize="10sp"
+        android:text="Log in to your existing account"
+        android:textColor="@color/darkpink" />
+
+</RelativeLayout>

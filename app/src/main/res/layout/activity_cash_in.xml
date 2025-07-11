@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:scrollbars="none"
+    android:background="@color/white"
+    tools:context=".CashInActivity">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/cashInText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Cash in"
+            android:textSize="24sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/popularMethodTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cashInText"
+            android:text="POPULAR METHODS"
+            android:layout_marginLeft="16dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/methods"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_border"
+            android:layout_below="@id/popularMethodTitle">
+
+            <Button
+                android:id="@+id/cashCloudSavings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_savings_24"
+                android:drawableRight="@drawable/baseline_arrow_right_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:text="CashCloud Savings"
+                android:paddingHorizontal="12dp"
+                android:fontFamily="@font/cerebri_sans"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+<!--            <Button-->
+<!--                android:id="@+id/cashCloudCenter"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/cashCloudSavings"-->
+<!--                android:drawableLeft="@drawable/baseline_store_24"-->
+<!--                android:drawableRight="@drawable/baseline_arrow_right_24"-->
+<!--                android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--                android:text="CashCloud Center"-->
+<!--                android:paddingHorizontal="12dp"-->
+<!--                android:fontFamily="@font/cerebri_sans"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:gravity="center_vertical"/>-->
+            <Button
+                android:id="@+id/debitCreditCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cashCloudSavings"
+                android:drawableLeft="@drawable/baseline_bank_24"
+                android:drawableRight="@drawable/baseline_arrow_right_24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:paddingHorizontal="12dp"
+                android:text="Debit or credit card"
+                android:fontFamily="@font/cerebri_sans"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ourPartnersTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/methods"
+            android:text="OUR PARTNERS"
+            android:layout_marginVertical="12dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textColor="@color/gray" />
+
+        <GridLayout
+            android:id="@+id/partners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ourPartnersTitle"
+            android:layout_marginHorizontal="16dp"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/billEaseButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/billease"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BillEase"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/gCashButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:src="@mipmap/ic_gcash_foreground"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GCash"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/mayaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@mipmap/ic_maya_foreground"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maya"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/dobButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@mipmap/ic_bpi_foreground"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BPI"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/bdoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@mipmap/ic_bdo_foreground"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BDO"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/grabPayButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:background="@null"
+                    android:src="@drawable/grabpay"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Grab Pay"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/metroBankButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@mipmap/ic_metrobank_foreground"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MetroBank"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/landBankButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@mipmap/ic_landbank_foreground"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Land Bank"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/dobubpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@mipmap/ic_unionbank_foreground"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="UnionBank"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="6dp"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:layout_marginBottom="12dp"-->
+<!--                android:background="@drawable/gray_border"-->
+<!--                android:gravity="center_horizontal">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/stripeButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="70dp"-->
+<!--                    android:background="@null"-->
+<!--                    android:src="@drawable/baseline_bank_24"-->
+<!--                    android:layout_marginBottom="6dp" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Stripe"-->
+<!--                    android:textColor="@color/gray"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:fontFamily="@font/cerebri_sans_semibold"-->
+<!--                    android:layout_marginBottom="6dp"-->
+<!--                    android:gravity="center" />-->
+<!--            </LinearLayout>-->
+        </GridLayout>
+
+    </RelativeLayout>
+</ScrollView>

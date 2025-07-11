@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Login form -->
+    <LinearLayout
+        android:id="@+id/loginForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/logo_image"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="CashCloud"
+            android:layout_marginVertical="40dp"
+            android:textColor="@color/darkpink"
+            android:fontFamily="@font/cerebri_sans_bold"
+            android:textSize="37sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_border"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <Spinner
+                android:id="@+id/countryCodeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical" />
+
+            <!-- Phone number input -->
+            <EditText
+                android:id="@+id/loginPhoneNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:hint="Phone number"
+                android:fontFamily="@font/cerebri_sans"
+                android:textSize="12sp"
+                android:inputType="phone"
+                android:background="@android:color/transparent"
+                android:padding="0dp"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleDrawable="@drawable/baseline_remove_red_eye_24"
+            app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_border"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:padding="16dp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginForm"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cerebri_sans"
+        android:textColor="@color/darkpink"
+        android:id="@+id/forgotPassword"
+        android:text="Forgot your password?" />
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:fontFamily="@font/cerebri_sans"
+        android:text="Log in"
+        android:backgroundTint="@color/gray"
+        android:layout_marginBottom="24dp"
+        android:textSize="12sp" />
+
+    <!-- Progress bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</RelativeLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:scrollbars="none"
+    android:background="@color/white"
+    tools:context=".GamesFragment">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <GridLayout
+            android:id="@+id/partners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:columnCount="2"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/mobileLegendsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mobilelegends"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Legends"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/steamWalletButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/steam"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Steam Wallet"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/garenaShellsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:src="@drawable/garena"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Garena Shells"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/gameclubButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:src="@drawable/gameclub"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gameclub"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/wildriftButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/wildrift"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOL Wildrift"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/robloxButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:src="@drawable/roblox"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Roblox"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/valorantButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/valorant"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Valorant"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/xboxButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/xbox"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Xbox"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/nintendoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/nintendo"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nintendo"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/minecraftButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/minecraft"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minecraft"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/genshinButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/genshin"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Genshin Impact"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
+                android:padding="8dp"
+                android:background="@drawable/gray_border"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/dragonNestButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/dragonnest"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dragon Nest"
+                    android:textColor="@color/gray"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/cerebri_sans_semibold"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </GridLayout>
+    </RelativeLayout>
+</ScrollView>

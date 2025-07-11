@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:background="@color/white"
+    tools:context=".CashInActivity">
+
+    <TextView
+        android:id="@+id/recoveryEmailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recovery email"
+        android:textSize="24sp"
+        android:fontFamily="@font/cerebri_sans_semibold"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/recoveryDescriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recoveryEmailText"
+        android:text="CashCloud can use this email address to assist you in email verification and password recovery."
+        android:fontFamily="@font/cerebri_sans"
+        android:padding="4dp"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recoveryDescriptionText"
+        android:layout_marginTop="16sp"
+        android:orientation="vertical"
+        android:background="@drawable/gray_border"
+        android:padding="16dp">
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/recoveryEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxxxx@gmail.com"
+            android:textSize="16sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:background="@null"
+            android:inputType="textEmailAddress" />
+
+        <!-- Verification status -->
+        <TextView
+            android:id="@+id/verificationStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UNVERIFIED"
+            android:textSize="12sp"
+            android:fontFamily="@font/cerebri_sans"
+            android:textColor="@android:color/holo_red_light" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/sendVerificationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLayout"
+        android:layout_marginTop="12dp"
+        android:text="Send email verification"
+        android:textSize="12sp"
+        android:fontFamily="@font/cerebri_sans"
+        android:backgroundTint="@color/darkpink" />
+
+    <Button
+        android:id="@+id/changeEmailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendVerificationButton"
+        android:text="Change recovery email address"
+        android:textSize="12sp"
+        android:textColor="@color/darkpink"
+        android:fontFamily="@font/cerebri_sans"
+        android:backgroundTint="@color/pink" />
+
+</RelativeLayout>

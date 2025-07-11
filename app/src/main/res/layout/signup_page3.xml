@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Login form -->
+    <LinearLayout
+        android:id="@+id/consentForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data privacy"
+            android:fontFamily="@font/cerebri_sans_semibold"
+            android:textSize="48sp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="70dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_info_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:fontFamily="@font/cerebri_sans_bold"
+                android:text="Learn about our policy" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Before you can use Maya, please make sure to read our Terms and Conditions and Privary Policy below."
+            android:fontFamily="@font/cerebri_sans"
+            android:layout_marginTop="10dp"
+            android:padding="4dp"
+            android:textColor="@color/gray" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/baseline_black_terms_and_conditions_24"
+            android:drawableRight="@drawable/baseline_arrow_right_24"
+            android:backgroundTint="@color/grey"
+            android:text="Terms and conditions"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cerebri_sans"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="24dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/cerebri_sans"
+        android:textSize="12sp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:text="By continuing, I content to the above Terms and Conditions and Privacy Policy." />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_alignParentBottom="true"
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="24dp"
+        android:fontFamily="@font/cerebri_sans"
+        android:text="Save"
+        android:backgroundTint="@color/darkpink"
+        android:layout_marginBottom="24dp"
+        android:textSize="12sp" />
+
+    <!-- Progress bar -->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="44dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
